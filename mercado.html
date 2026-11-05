@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercado - CryptX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="global.css" />
+</head>
+<body>
+  <main class="mercado">
+
+    <a class="enlace-volver" href="index.html">← Volver</a>
+
+    <header class="mercado__encabezado">
+      <h1 class="logotipo logotipo--chico">Crypt<span class="logotipo__x">X</span></h1>
+      <h2 class="titulo">Mercado</h2>
+      <p class="texto">Sigue el precio de tus criptomonedas favoritas</p>
+    </header>
+
+    <form class="barra-busqueda">
+      <span class="barra-busqueda__icono">🔍</span>
+      <input class="barra-busqueda__campo" type="text" placeholder="Buscar criptomoneda" />
+      <button class="barra-busqueda__filtro" type="button">Filtrar</button>
+    </form>
+
+    <section class="lista-cripto">
+
+      <article class="tarjeta-cripto">
+        <div class="tarjeta-cripto__icono">₿</div>
+        <div class="tarjeta-cripto__info">
+          <h3 class="tarjeta-cripto__nombre">Bitcoin</h3>
+          <span class="tarjeta-cripto__simbolo">BTC</span>
+        </div>
+        <div class="tarjeta-cripto__precio">
+          <p class="tarjeta-cripto__valor">$67,250.00</p>
+          <span class="tarjeta-cripto__variacion tarjeta-cripto__variacion--sube">+2.4%</span>
+        </div>
+      </article>
+
+      <article class="tarjeta-cripto">
+        <div class="tarjeta-cripto__icono">Ξ</div>
+        <div class="tarjeta-cripto__info">
+          <h3 class="tarjeta-cripto__nombre">Ethereum</h3>
+          <span class="tarjeta-cripto__simbolo">ETH</span>
+        </div>
+        <div class="tarjeta-cripto__precio">
+          <p class="tarjeta-cripto__valor">$3,480.50</p>
+          <span class="tarjeta-cripto__variacion tarjeta-cripto__variacion--sube">+1.1%</span>
+        </div>
+      </article>
+
+      <article class="tarjeta-cripto">
+        <div class="tarjeta-cripto__icono">S</div>
+        <div class="tarjeta-cripto__info">
+          <h3 class="tarjeta-cripto__nombre">Solana</h3>
+          <span class="tarjeta-cripto__simbolo">SOL</span>
+        </div>
+        <div class="tarjeta-cripto__precio">
+          <p class="tarjeta-cripto__valor">$162.30</p>
+          <span class="tarjeta-cripto__variacion tarjeta-cripto__variacion--baja">-1.8%</span>
+        </div>
+      </article>
+
+      <article class="tarjeta-cripto">
+        <div class="tarjeta-cripto__icono">B</div>
+        <div class="tarjeta-cripto__info">
+          <h3 class="tarjeta-cripto__nombre">BNB</h3>
+          <span class="tarjeta-cripto__simbolo">BNB</span>
+        </div>
+        <div class="tarjeta-cripto__precio">
+          <p class="tarjeta-cripto__valor">$590.75</p>
+          <span class="tarjeta-cripto__variacion tarjeta-cripto__variacion--sube">+0.6%</span>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>
