@@ -1,0 +1,188 @@
+:root {
+  --color-fondo: #070707;
+  --color-primario: #6552fe;
+  --color-sombra-primario: rgba(101, 82, 254, 0.35);
+  --color-texto: #ffffff;
+  --fuente-principal: 'Poppins', sans-serif;
+  --radio-grande: 16px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #000;
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  display: flex;
+  justify-content: center;
+}
+
+
+.bienvenida {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--color-fondo);
+  padding: 56px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.portada { display: flex; flex-direction: column; gap: 24px; }
+.portada__imagen {
+  width: 100%;
+  max-width: 280px;
+  align-self: flex-end;
+  margin-right: -20px;
+}
+
+.logotipo { font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -1px; }
+.logotipo__x { color: var(--color-primario); }
+
+.titulo { font-size: 28px; font-weight: 500; line-height: 1.4; }
+.texto  { font-size: 14px; font-weight: 400; line-height: 1.5; }
+
+.boton {
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: var(--radio-grande);
+  background: var(--color-primario);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 12px 24px var(--color-sombra-primario);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+.boton:hover  { filter: brightness(1.1); }
+.boton:active { transform: scale(0.98); }
+
+
+.portada-texto { display: flex; flex-direction: column; gap: 24px; max-width: 260px; }
+
+
+.tarjeta-cripto {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  margin: 24px 0;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: var(--radio-grande);
+}
+
+.tarjeta-cripto__icono {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tarjeta-cripto__info { flex: 1; }
+.tarjeta-cripto__nombre { font-size: 16px; font-weight: 500; }
+.tarjeta-cripto__simbolo { font-size: 12px; color: #9a9a9a; }
+
+.tarjeta-cripto__precio { text-align: right; }
+.tarjeta-cripto__valor { font-size: 15px; font-weight: 500; }
+
+.tarjeta-cripto__variacion { font-size: 12px; font-weight: 500; }
+.tarjeta-cripto__variacion--sube { color: #2ecc71; }
+.tarjeta-cripto__variacion--baja { color: #ff5a5f; }
+
+
+.barra-busqueda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 8px 0 16px;
+  margin-top: 24px;
+  background: #141414;
+  border: 1px solid #262626;
+  border-radius: var(--radio-grande);
+}
+
+.barra-busqueda:focus-within {
+  border-color: var(--color-primario);
+}
+
+.barra-busqueda__icono { font-size: 16px; }
+
+.barra-busqueda__campo {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 14px;
+}
+
+.barra-busqueda__campo::placeholder { color: #9a9a9a; }
+
+.barra-busqueda__filtro {
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  background: var(--color-primario);
+  color: var(--color-texto);
+  font-family: var(--fuente-principal);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.barra-busqueda__filtro:hover { filter: brightness(1.1); }
+
+a.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.mercado {
+  width: 100%;
+  max-width: 390px;
+  min-height: 100vh;
+  background: var(--color-fondo);
+  padding: 40px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mercado__encabezado {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logotipo--chico { font-size: 36px; margin-bottom: 12px; }
+
+.enlace-volver {
+  color: #9a9a9a;
+  font-size: 16px;
+  text-decoration: none;
+}
+.enlace-volver:hover { color: var(--color-texto); }
+
+.mercado .barra-busqueda { margin-top: 0; }
+
+.lista-cripto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.lista-cripto .tarjeta-cripto { margin: 0; }
